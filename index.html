@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calc.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <center><div class="Heading" >
+        <h2>Welcome</h2>
+        <h3>Basic Tip Calculator</h3></center>
+    </div>
+    <div class="container" id="calculator">
+        <form action="" id="calcForm">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+            <div id="amtlabel" class="txt">
+                <label for="tot">Amount:</label>
+              <input id="amt" type="number" class="form-control" placeholder="enter total bill">
+            </div>
+            <div id="tiplabel" class="txt"><label for="percent">Tip:</label>
+              <input id="tip" type="number" class="form-control" placeholder="enter tip %">
+            </div>
+            <div id="totallabel" class="txt"><label for="percent">Total:</label>
+              <input id="total" type="number" class="form-control" placeholder="total amount">
+            </div>
+            <br><br>
+            <button type="reset" id="btnClear" class="btn btn-danger" style="float:left;"><i class="fa fa-refresh  fa-2x fa-fw"></i></button>
+            <button type="button" id="btnCal" class="btn btn-success" style="float:right" onclick="calTip()" >
+                <i id ="cal" class="fa fa-check-circle fa-2x" aria-hidden="true"></i>
+
+            </button>
+          </div>
+          <!--main content-->
+        </div>
+        <!--row-->
+        <div id="percentage" class="txt fad text-center"></div>
+        <div id="totalOutPut" class="txt fad text-center"></div>
+        <div id="party" class="txt  fad text-center"></div>
+      </div>
+      <!--container-->
+    </form>
+</body>
+
+
+</html>
+
